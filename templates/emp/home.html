@@ -20,10 +20,12 @@
                     <th>S.NO.</th>
                     <th>NAME</th>
                     <th>ID</th>
+                    <th>Email</th>
                     <th>PHONE</th>
                     <th>WORKING STATUS</th>
                     <th>DEPARTMENT</th>
                     <th>ADDRESS</th>
+                    <th>Salary</th>
                     <th>ACTION</th>
                   </tr>
                 </thead>
@@ -33,10 +35,12 @@
                     <td>{{forloop.counter}}</td>
                     <td>{{e.name}}</td>
                     <td>{{e.emp_id}}</td>
+                    <td>{{e.email}}</td>
                     <td>{{e.phone}}</td>
                     <td>{{e.working}}</td>
                     <td>{{e.department}}</td>
                     <td>{{e.address}}</td>
+                    <td>{{e.salary}}</td>
                     <td>
                       <a href="/emp/delete-emp/{{e.id}}" class="btn btn-danger btn-sm">Delete</a>
                       <a href="/emp/update-emp/{{e.id}}" class="btn btn-dark btn-sm">Update</a>

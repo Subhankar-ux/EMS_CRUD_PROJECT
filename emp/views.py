@@ -12,16 +12,20 @@ def add_emp(request):
     if request.method=="POST":
         emp_name=request.POST.get("emp_name")
         emp_id=request.POST.get("emp_id")
+        emp_email=request.POST.get("emp_email")
         emp_phone=request.POST.get("emp_phone")
         emp_address=request.POST.get("emp_address")
         emp_working=request.POST.get("emp_working")
         emp_department=request.POST.get("emp_department")
+        emp_salary=request.POST.get("emp_salary")
         e=Emp()
         e.name=emp_name
         e.emp_id=emp_id
+        e.email=emp_email
         e.phone=emp_phone
         e.address=emp_address
         e.department=emp_department
+        e.salary=emp_salary
         if emp_working is None:
             e.working=False
         else:
@@ -46,18 +50,22 @@ def do_update_emp(request,emp_id):
     if request.method=="POST":
         emp_name=request.POST.get("emp_name")
         emp_id_temp=request.POST.get("emp_id")
+        emp_email=request.POST.get("emp_email")
         emp_phone=request.POST.get("emp_phone")
         emp_address=request.POST.get("emp_address")
         emp_working=request.POST.get("emp_working")
         emp_department=request.POST.get("emp_department")
+        emp_salary=request.POST.get("emp_salary")
 
         e=Emp.objects.get(pk=emp_id)
 
         e.name=emp_name
         e.emp_id=emp_id_temp
+        e.email=emp_email
         e.phone=emp_phone
         e.address=emp_address
         e.department=emp_department
+        e.salary=emp_salary
         if emp_working is None:
             e.working=False
         else:
