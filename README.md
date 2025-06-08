@@ -19,10 +19,6 @@ This Employee Management System performs basic CRUD Operations.
 
 > This Application was created using Python, Django, HTML/CSS, and Bootstrap.
 
-## Sample GIF
-
-![Employee Management System](https://raw.githubusercontent.com/Shobhit1338/Employee-Management-System/main/EMS.gif)
-
 ## Installation
 
 This requires [Python](https://www.python.org/) v3.8+ and [Django](https://www.djangoproject.com/) v4.0.4+ to run.
