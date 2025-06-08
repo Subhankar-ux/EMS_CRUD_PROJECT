@@ -3,7 +3,7 @@
 import os
 import sys
 
-
+#this is the main file to run this project of crud employee-management-system
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myapp.settings')
